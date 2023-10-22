@@ -5,6 +5,64 @@ import {useEffect, useState } from 'react'
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
+    const [iframeVisible, setIframeVisible] = useState(false);
+
+    const toggleIframe = () => { 
+      setIframeVisible(!iframeVisible);
+    };
+    
+    
+    const closeIframe = () => {
+      setIframeVisible(false);
+    };
+  
+  
+
+
+
+
+
+
+
+
+
+    const [iframeVisibleML, setIframeVisibleML] = useState(false);
+
+    const toggleIframeML = () => { 
+      setIframeVisibleML(!iframeVisibleML);
+    };
+    
+    
+    const closeIframeML = () => {
+      setIframeVisibleML(false);
+    };
+
+
+
+
+    const [iframeVisibleAnalytics, setIframeVisibleAnalytics] = useState(false);
+
+    const toggleIframeAnalytics = () => { 
+      setIframeVisibleAnalytics(!iframeVisibleAnalytics);
+    };
+    
+    
+    const closeIframeAnalytics = () => {
+      setIframeVisibleAnalytics(false);
+    };
+
+
+
+
+
+
+
+    
+
+
+
+
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -45,14 +103,75 @@ const Portfolio = () => {
                 <a href="Resume_2023.pdf" target="_blnak" className="flat-button">RESUME</a>
 
             </div>
-            <div className='port-contain'>
-               <iframe
-                  title="External Website"
-                  src="https://emiliano-rodriguez.github.io/projects.html"
-                  width="800"
-                  height="600"
-               ></iframe>
+
+
+            <div>
+      <button className="button_ug_projects" onClick={toggleIframe}>undergraduate projects</button>
+      {iframeVisible && (
+        <div className='port-contain' style={{ textAlign: 'left' }}>
+            <div className="close-button" onClick={closeIframe}>
+              Close [X]
             </div>
+
+          <iframe
+            title="External Website"
+            src="https://emiliano-rodriguez.github.io/projects.html"
+            width="800"
+            height="600"
+          ></iframe>
+        </div>
+      )}
+
+<button className="button_x_bot" onClick={toggleIframeML}>Machine Learning Bot</button>
+      {iframeVisibleML && (
+        <div className='port-contain' style={{ textAlign: 'left' }}>
+            <div className="close-button" onClick={closeIframeML}>
+              Close [X]
+            </div>
+
+          <iframe
+            title="External Website"
+            src="https://livedashboard.pages.dev/"
+            width="800"
+            height="600"
+          ></iframe>
+        </div>
+      )}
+
+
+
+<button className="button_analytics" onClick={toggleIframeAnalytics}>Analytical Dashboard</button>
+      {iframeVisibleAnalytics && (
+        <div className='port-contain' style={{ textAlign: 'left' }}>
+            <div className="close-button" onClick={closeIframeAnalytics}>
+              Close [X]
+            </div>
+
+          <iframe
+            title="External Website"
+            src="https://livedashboard.pages.dev/mobile"
+            width="800"
+            height="600"
+          ></iframe>
+        </div>
+      )}
+
+
+
+
+
+
+
+
+
+    </div>
+  );
+
+       
+       
+       
+       
+       
         </div>
     )
 }

@@ -80,7 +80,7 @@
 
 .port-contain {
   position: absolute;
-  background: #000000;
+  background: #00000000;
   top: 50px;
   right: 37%;
   z-index: 999999;
@@ -137,4 +137,52 @@
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
 
+}
+
+.button_ug_projects {
+  background-color: #f1e100;
+  color: rgb(0, 29, 51);
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  font-weight: bold;
+}
+.button_ug_projects:hover {
+  background-color: #ff9900; /* Change the background color on hover */
+}
+
+
+.button_x_bot {
+  background-color: #f1e100;
+  color: rgb(0, 29, 51);
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  font-weight: bold;
+}
+.button_x_bot:hover {
+  background-color: #ff9900; /* Change the background color on hover */
+}
+
+
+
+.button_analytics {
+  background-color: #f1e100;
+  color: rgb(0, 29, 51);
+  padding: 10px 20px;
+  width: 200px;
+  border: none;
+  position: absolute;
+  right: 20%;
+  top: 70%;
+  font-weight: bold;
+}
+.button_analytics:hover {
+  background-color: #ff9900; /* Change the background color on hover */
 }
