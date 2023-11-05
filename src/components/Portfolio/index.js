@@ -122,7 +122,7 @@ const Portfolio = () => {
         </div>
       )}
 
-<button className="button_x_bot" onClick={toggleIframeML}>Machine Learning Bot</button>
+<button className="button_x_bot" onClick={toggleIframeML}>Twitter Tale Bot</button>
       {iframeVisibleML && (
         <div className='port-contain' style={{ textAlign: 'left' }}>
             <div className="close-button" onClick={closeIframeML}>
@@ -131,7 +131,7 @@ const Portfolio = () => {
 
           <iframe
             title="External Website"
-            src="https://livedashboard.pages.dev/"
+            src="https://livedashboard.pages.dev/twitterbot"
             width="800"
             height="600"
           ></iframe>
