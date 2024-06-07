@@ -100,7 +100,7 @@ const Portfolio = () => {
 
                 </p>
 
-                <a href="Resume_2023.pdf" target="_blnak" className="flat-button">RESUME</a>
+                <a href="Resume_2024.pdf" target="_blnak" className="flat-button">RESUME</a>
 
             </div>
 
