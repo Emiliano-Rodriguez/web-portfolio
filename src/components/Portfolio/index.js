@@ -91,7 +91,7 @@ const Portfolio = () => {
                     Professional Roles        
                 </h2>
                 <p>
-                    Anyar Inc = [Engineer, Machine Learning Engineer] <br/>
+                    Anyar Inc = [Staff Engineer, Machine Learning Engineer] <br/>
                     Date = June 23 - Present <br/><br/>
                     USAA = [Data Engineer, Software Developer] <br/>
                     Date = June 2019 - June 2023 <br/><br/>
