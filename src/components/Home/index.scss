@@ -7,7 +7,19 @@
         transform: traslateY(-50%);
         width: 40%;
         max-height: 90%;
+
+        @media (max-width: 768px) { // For tablets and smaller screens
+            width: 70%;
+            left: 15%;
+            top: 30%;
+        }
+        @media (max-width: 480px) { // For mobile screens
+            width: 80%;
+            left: 17%;
+            top: 45%;
+        }
     }
+
     h1 {
         color: #fff;
         font-size: 53px;
@@ -38,11 +50,16 @@
             opacity: 0.6;
         }
 
+        @media (max-width: 480px) { // For mobile screens
+            position: relative;
+            font-size: 28px;
+        }
+
 
 
         img {
             width: 70px;
-            margin-left: 20px;
+            margin-left: -10px;
             opacity: 0;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -79,4 +96,12 @@ h2 {
         background: #ffd700;
         color: #333;
     }
+
+    @media (max-width: 480px) { // For mobile screens
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+
+
+
 }

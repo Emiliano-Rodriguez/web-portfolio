@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import LogoS from '../../../assets/images/logo.gif'
+import LogoS from '../../../assets/images/homelogo.gif'
 import './index.scss'
 
 const Logo = () => {
